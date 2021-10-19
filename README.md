@@ -39,14 +39,14 @@ localhost:8080/artist
         "name": "Praveen",
         "shortName": "Praveen",
         "gender": "Male",
-        "area": "Kalavasal,madurai,625010"
+        "area": "Hallonbergsvagen,Sweden,17453"
     },
     {
         "id": 1,
         "name": "Praveen Jas",
         "shortName": "Praveen Jas",
         "gender": "Male",
-        "area": "Kalavasal,madurai,625010"
+        "area": "Hallonbergsvagen,Sweden,17453"
     }
 ]
 
@@ -60,7 +60,7 @@ localhost:8080/artist/0
     "name": "Praveen",
     "shortName": "Praveen",
     "gender": "Male",
-    "area": "Kalavasal,madurai,625010"
+    "area": "Hallonbergsvagen,Sweden,17453"
 }
 
 
@@ -78,7 +78,7 @@ localhost:8080/recording
             "name": "Praveen",
             "shortName": "Praveen",
             "gender": "Male",
-            "area": "Kalavasal,madurai,625010"
+            "area": "Hallonbergsvagen,Sweden,17453"
         },
         "duration": "40:35",
         "track": {
@@ -96,7 +96,7 @@ localhost:8080/recording
             "name": "Praveen Jas",
             "shortName": "Praveen Jas",
             "gender": "Male",
-            "area": "Kalavasal,madurai,625010"
+            "area": "Hallonbergsvagen,Sweden,17453"
         },
         "duration": "40:35",
         "track": {
