@@ -43,7 +43,8 @@ public class RecordingServiceImpl implements RecordingService {
 	}
 
 	public void saveRecording(RecordingDTO record) {
-		recordingRepository.save(mapperFacade.map(record, Recording.class));
+		Recording recording = mapperFacade.map(record, Recording.class);
+		recordingRepository.save(recording);
 	}
 
 	public void updateRecording(long id, RecordingDTO recordDTO) throws Exception {

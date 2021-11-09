@@ -8,7 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 
-import com.dto.RecordingDTO;
 import com.dto.TrackDTO;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.model.Track;
@@ -42,8 +41,9 @@ public class TrackServiceImpl implements TrackService {
 		return trackDtos;
 	}
 
-	public void saveTrack(TrackDTO track) {
-		trackRepository.save(mapperFacade.map(track, Track.class));
+	public void saveTrack(TrackDTO trackDTO) {
+		Track track = mapperFacade.map(trackDTO, Track.class);
+		trackRepository.save(track);
 	}
 
 	public void updateTrack(long id, TrackDTO trackDTO) throws Exception {

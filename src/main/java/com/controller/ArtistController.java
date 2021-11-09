@@ -44,7 +44,7 @@ public class ArtistController {
 	
 	@PatchMapping("/{id}")
 	public ResponseEntity<HttpStatus> updateArtist(@RequestBody ArtistDTO artistDTO,@PathVariable long id) throws Exception {
-		 this.artistService.saveArtist(artistDTO);
+		 this.artistService.updateArtist(id,artistDTO);
 		return new ResponseEntity<HttpStatus>(HttpStatus.OK);
 	}
 	

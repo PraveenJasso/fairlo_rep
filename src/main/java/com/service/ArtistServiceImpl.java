@@ -2,6 +2,7 @@ package com.service;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.Random;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,8 +41,9 @@ public class ArtistServiceImpl implements ArtistService {
 		return artistDTOs;
 	}
 
-	public void saveArtist(ArtistDTO artist) {
-		artistRepository.save(mapperFacade.map(artist, Artist.class));
+	public void saveArtist(ArtistDTO artistDTO) {
+		Artist artist = mapperFacade.map(artistDTO, Artist.class);
+		artistRepository.save(artist);
 	}
 
 	public void updateArtist(long id, ArtistDTO artistDTO) throws Exception {
